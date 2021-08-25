@@ -21,11 +21,7 @@ struct ContentView: View {
               NavigationLink {
                 ContentDetailView(launchID: launch.id)
               } label: {
-                if let site = launch.site {
-                  Text(site)
-                } else {
-                  EmptyView()
-                }
+                LaunchRow(launch: launch)
               }
             }
           }
