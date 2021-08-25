@@ -25,6 +25,9 @@ struct ContentView: View {
               }
             }
           }
+          .refreshable {
+            viewModel.loadLaunches()
+          }
         }
       }
       .navigationTitle("Apollo iOS Tutorial")
