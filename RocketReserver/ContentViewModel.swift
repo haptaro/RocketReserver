@@ -8,11 +8,15 @@ import Foundation
 import Combine
 
 final class ContentViewModel: ObservableObject {
-  @Published private(set) var launches = [LaunchListQuery.Data.Launch.Launch]()
+  @Published private(set) var launches = [UILaunch]()
   @Published private(set) var isLoading = true
   
-  init() {}
+  private let translator: Translator
   
+  init(translator: Translator) {
+    self.translator = translator
+  }
+
   func loadLaunches() {
     Network.shared.apollo.fetch(query: LaunchListQuery()) { [unowned self] result in
       isLoading = false
@@ -22,7 +26,7 @@ final class ContentViewModel: ObservableObject {
         if let launchConnection = graphQLResult.data?.launches {
           _launches.append(contentsOf: launchConnection.launches.compactMap { $0 })
         }
-        self.launches = _launches
+        self.launches = _launches.map { translator.translate(from: $0) }
       case let .failure(error):
         print("Failure! Error: \(error)")
       }

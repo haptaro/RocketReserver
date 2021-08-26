@@ -25,6 +25,8 @@
 		DBC1D40C26D6B4E000B4359A /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D40B26D6B4E000B4359A /* ContentViewModel.swift */; };
 		DBC1D40E26D6B52000B4359A /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D40D26D6B52000B4359A /* ContentDetailView.swift */; };
 		DBC1D41026D6B96C00B4359A /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D40F26D6B96C00B4359A /* LaunchRow.swift */; };
+		DBC1D41426D840E700B4359A /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D41326D840E700B4359A /* Translator.swift */; };
+		DBC1D41626D8429500B4359A /* UILaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC1D41526D8429500B4359A /* UILaunch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		DBC1D40B26D6B4E000B4359A /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		DBC1D40D26D6B52000B4359A /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		DBC1D40F26D6B96C00B4359A /* LaunchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
+		DBC1D41326D840E700B4359A /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		DBC1D41526D8429500B4359A /* UILaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILaunch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				DBC1D40F26D6B96C00B4359A /* LaunchRow.swift */,
 				DBC1D40D26D6B52000B4359A /* ContentDetailView.swift */,
 				DBC1D40B26D6B4E000B4359A /* ContentViewModel.swift */,
+				DBC1D41526D8429500B4359A /* UILaunch.swift */,
+				DBC1D41326D840E700B4359A /* Translator.swift */,
 				DBC1D40926D6B20B00B4359A /* AppDelegate.swift */,
 				DBC1D40326D6ADC200B4359A /* schema.json */,
 				DBC1D40426D6AF9F00B4359A /* LaunchList.graphql */,
@@ -321,10 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC1D41626D8429500B4359A /* UILaunch.swift in Sources */,
 				DBC1D3D026D6A82300B4359A /* ContentView.swift in Sources */,
 				DBC1D40626D6B06300B4359A /* API.swift in Sources */,
 				DBC1D40C26D6B4E000B4359A /* ContentViewModel.swift in Sources */,
 				DBC1D40E26D6B52000B4359A /* ContentDetailView.swift in Sources */,
+				DBC1D41426D840E700B4359A /* Translator.swift in Sources */,
 				DBC1D40826D6B11A00B4359A /* Network.swift in Sources */,
 				DBC1D41026D6B96C00B4359A /* LaunchRow.swift in Sources */,
 				DBC1D40A26D6B20B00B4359A /* AppDelegate.swift in Sources */,

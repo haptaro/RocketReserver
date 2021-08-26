@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-  @StateObject private var viewModel = ContentViewModel()
+  @StateObject private var viewModel = ContentViewModel(
+    translator: Translator()
+  )
 
   var body: some View {
     NavigationView {
@@ -38,10 +40,10 @@ struct ContentView: View {
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView()
-  }
-}
+//struct ContentView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ContentView()
+//  }
+//}
 
 extension LaunchListQuery.Data.Launch.Launch: Identifiable {}

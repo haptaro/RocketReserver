@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct LaunchRow: View {
-  let launch: LaunchListQuery.Data.Launch.Launch
+  let launch: UILaunch
 
   var body: some View {
     HStack {
-      ImageArea(missionPatch: launch.mission?.missionPatch)
+      ImageArea(missionPatch: launch.missionPatchURLString)
       VStack(alignment: .leading) {
-        Text(launch.mission?.name ?? "")
+        Text(launch.missionName ?? "")
           .font(.body)
         Text(launch.site ?? "")
           .font(.caption)
